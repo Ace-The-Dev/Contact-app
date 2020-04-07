@@ -19,7 +19,7 @@
                                 <li class="list"><a href="#">Favorites</a></li>
                                 <li class="list"><a href="#">Add <span id="plus">&plus;</span></a></li>
                             </ul>
-                        </nav>
+    </nav>
     <div class="innerwrapper">
         <h1>contacts</h1>
         <div id="section">
