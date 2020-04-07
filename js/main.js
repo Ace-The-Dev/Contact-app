@@ -7,7 +7,7 @@ let navStatus = 0;
 
 
 let open = function (e) {
-    if (navStatus == 0) {
+    if (!navStatus) {
         sideNav.style.width = "250px";
         Nav.style.cssText = "padding-right:0;";
         for (i = 0; i < listItem.length; i++) {
@@ -21,6 +21,7 @@ let open = function (e) {
             listItem[i].style.cssText = "margin-left: -200px;";
         }
         navStatus = 0;
+        window.alert(navStatus);
     }
     e.preventDefault();
 }

@@ -30,6 +30,7 @@ main {
     float: right;
     text-align: center;
     background-color: rgba(238, 238, 238, .5);
+    z-index: 0;
 }
 
 #section {
@@ -47,6 +48,7 @@ main {
 }
 
 #side-menu {
+    position: sticky;
     float: left;
     background: #3C4145;
     height: 100%;
@@ -54,6 +56,9 @@ main {
     width: 55px;
     transition: all .5s;
     transition-delay: .17s;
+    margin-right: 0;
+    display: inline-block;
+    z-index: 1;
 }
 
 #ul {
