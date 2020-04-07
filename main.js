@@ -1,5 +1,5 @@
 // declare variales for the html elements we want
-const menuBtn = document.querySelector("#menu-btn");
+const menuBtn = document.querySelector("#burger-btn");
 const sideNav = document.querySelector("#side-menu");
 const Nav = document.querySelector("#ul");
 const listItem = document.querySelectorAll(".list");
