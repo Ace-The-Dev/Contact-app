@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file:///C:/xampp/htdocs/Contact%20App/fontawesome-free-5.10.1-web/css/all.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="js/jquery-3.5.0.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <nav id="side-menu" class="side-nav">
+                <a href="#" tabindex="0">
+                    <img id="burger-btn" src="images/hamburger.png" height="45" alt="Menu">
+                </a>
+                <hr>
+                <ul id="side-ul">
+                    <li class="list"><a href="#">All</a></li>
+                    <li class="list"><a href="#">Family</a></li>
+                    <li class="list"><a href="#">Favorites</a></li>
+                    <li class="list">
+                        <a href="contactform.html">new</a>
+                        <!--<span id="plus">&plus;</span>
+                            <i class=""></i>-->
+                    </li>
+                </ul>
+            </nav>
+            <div class="innerwrapper">
+                <a href="index.html" id="home-link">
+                    <h1>New contacts</h1>
+                </a>
+                <div id="inner-section">
+                    <form action="addContact.php" method="POST">
+                        <div class="inputBox" id="fnbox">
+                            <input type="text" name="Name" id="fName" placeholder="john">
+                            <label for="fName">First name</label>
+                        </div>
+                        <div class="inputBox" id="lnbox">
+                            <input type="text" name="Name" id="lName" placeholder="smith">
+                            <label id="lnlabel" for="lName">Last name</label>
+                        </div>
+
+                        <div class="inputBox" id="fnbox">
+                            <input type="tel" name="cell" id="cell" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="###-###-####">
+                            <label for="cell">cell</label>
+                        </div>
+                        <div class="inputBox" id="lnbox">
+                            <input type="tel" name="office" id="office" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="###-###-####">
+                            <label for="office">office</label>
+                        </div>
+
+                        <div>
+                            <select name="category" id="type">
+                                <option value="none"></option>
+                                <option value="friend">friend</option>
+                                <option value="family">family</option>
+                                <option value="work">work</option>
+                                <option value="favorite">favorite</option>
+                            </select>
+                            <label for="type"> type</label>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="email" name="mail" id="mail" placeholder="johnsmith@gmail.com">
+                            <label for="mail">email</label>
+                        </div>
+
+                        <button type="submit" id="form-submit">done</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
